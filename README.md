@@ -2,7 +2,7 @@ Tigran SLAMA
 
 ![Matrice de correlation](./images/corr_matrix.png)
 
-D'apres les dire du client et cette matrice, j'en deduis que:
+D'apres les dire du client et cette matrice, j'en déduis que:
   - On souhaite apprendre Z
   - Les champs  F, G, I, L, N, Q sont importants, en effet, 
   ils ne sont pas dans la moyenne des autres resultats de Z.
@@ -60,8 +60,8 @@ notamment pour les K voisins.
 
 ## Resultats finaux
 
-En gardant les champs D, G, K, L, M, Q, S; les plus coreles a Z, on obtient des
-resultats plutot satisfaisant.
+En gardant les champs D, G, K, L, M, Q, S; les plus corelés à Z, on obtient des
+résultats plutot satisfaisants.
 
 ### K voisins
 ``` 
@@ -99,8 +99,10 @@ test : 0.9607843137254902
  [ 0  0  0  0  0  4  0]
  [ 0  1  0  0  0  1  3]]
  ```
- L'algorithme génère l'arbre suivant.
- ![Arbre genere](./images/out.png)
+L'algorithme génère l'arbre suivant.
+![Arbre genere](./images/out.png)
+
+L'arbre de décision semble être le plus efficace de tous.
 
 ## Verficiation si le client a raison avec le champ Q.
 
