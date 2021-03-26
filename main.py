@@ -50,8 +50,7 @@ file_name = './exam.csv'
 df = pd.read_csv(file_name)
 
   # D, G, K, L, M, Q, S
-# df = df.drop(columns=['A', 'B', 'C', 'E', 'F', 'H', 'I', 'J', 'N', 'O', 'P', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y'], axis=1)
-df = df.drop(columns=['A', 'B', 'C', 'E', 'F', 'H', 'I', 'J', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y'], axis=1)
+df = df.drop(columns=['A', 'B', 'C', 'E', 'F', 'H', 'I', 'J', 'N', 'O', 'P', 'R', 'T', 'U', 'V', 'W', 'X', 'Y'], axis=1)
 
 x_train, x_test, y_train, y_test = splitData(copy.deepcopy(df), 0.5, 'Z')
 
@@ -81,4 +80,7 @@ tree.fit(x_train, y_train)
 print('train :', tree.score(x_train, y_train))
 print('test :', tree.score(x_test, y_test))
 print(confusion_matrix(y_test, tree.predict(x_test)))
+
+export_graphviz(tree, out_file='glass_tree.dot',
+        feature_names=['D', 'G', 'K', 'L', 'M', 'Q', 'S'])
 
