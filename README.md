@@ -14,7 +14,7 @@ Je vais essayer de mettre en place les trois algorithmes d'apprentissage suivant
 
 Je choisi ces algorithmes car nos données sont discrètes, et ces algorithmes s'y adaptent.
 
-## Resultats préliminaires
+## Résultats préliminaires
 ### K voisins
  ```
 train : 0.72
@@ -41,7 +41,7 @@ test : 0.8235294117647058
  [ 0  0  0  0  0  2  3]]
  ```
 
-### Arbre de decision
+### Arbre de décision
  ```
 train : 0.9
 test : 0.803921568627451
@@ -58,7 +58,7 @@ Les resultats en choissant les 7 colonnes les plus corélées et les moins
 corélées à Z. Ils ne sont pas mauvais, mais ils pourraient être meilleurs,
 notamment pour les K voisins.
 
-## Resultats finaux
+## Résultats finaux
 
 En gardant les champs D, G, K, L, M, Q, S; les plus corelés à Z, on obtient des
 résultats plutot satisfaisants.
@@ -87,7 +87,7 @@ test : 0.9411764705882353
  [ 0  0  0  0  0  4  0]
  [ 0  1  0  0  0  0  4]]
  ```
-### Arbre de decision
+### Arbre de décision
  ```
 train : 0.92
 test : 0.9607843137254902
@@ -104,7 +104,7 @@ L'algorithme génère l'arbre suivant.
 
 L'arbre de décision semble être le plus efficace de tous.
 
-## Verficiation si le client a raison avec le champ Q.
+## Vérification si le client a raison avec le champ Q.
 
 ### K voisins
  ```
