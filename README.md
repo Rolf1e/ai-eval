@@ -99,6 +99,8 @@ test : 0.9607843137254902
  [ 0  0  0  0  0  4  0]
  [ 0  1  0  0  0  1  3]]
  ```
+ L'algorithme génère l'arbre suivant.
+ ![Arbre genere](./images/out.png)
 
 ## Verficiation si le client a raison avec le champ Q.
 
@@ -140,7 +142,5 @@ test : 0.9215686274509803
  [ 0  0  0  0  0  4  0]
  [ 0  0  0  0  0  1  4]]
  ```
- L'algorithme génère l'arbre suivant.
- ![Arbre genere](./images/out.png)
 
 Le client semble avoir raison, le champ Q semble plutot important.
